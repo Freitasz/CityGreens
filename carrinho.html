@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>CityGreens</title>
+    <title>Vegefoods - Free Bootstrap 4 Template by Colorlib</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -39,19 +39,19 @@
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
 	          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-	          <li class="nav-item dropdown">
+	          <li class="nav-item active dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mercado</a>
               <div class="dropdown-menu" aria-labelledby="dropdown04">
               	<a class="dropdown-item" href="loja.html">Mercado</a>
               	<a class="dropdown-item" href="wishlist.html">Lista de Items</a>
-                <a class="dropdown-item" href="product-single.html">Produto Singular</a>
+                <a class="dropdown-item" href="product-single.html">Produto Singular/a>
                 <a class="dropdown-item" href="carrinho.html">Carrinho</a>
                 <a class="dropdown-item" href="checkout.html">Checkout</a>
               </div>
             </li>
-	          <li class="nav-item active"><a href="sobre.html" class="nav-link">Sobre</a></li>
+	          <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
 	          <li class="nav-item"><a href="contactos.html" class="nav-link">Contactos</a></li>
-	          <li class="nav-item cta cta-colored"><a href="cart.html" class="nav-link"><span class="icon-shopping_cart"></span>[0]</a></li>
+	          <li class="nav-item cta cta-colored"><a href="carrinho.html" class="nav-link"><span class="icon-shopping_cart"></span>[0]</a></li>
 
 	        </ul>
 	      </div>
@@ -63,43 +63,135 @@
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
           <div class="col-md-9 ftco-animate text-center">
-          	<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>About us</span></p>
-            <h1 class="mb-0 bread">About us</h1>
+          	<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span></p>
+            <h1 class="mb-0 bread">Meu Carrinho</h1>
           </div>
         </div>
       </div>
     </div>
 
-    <section class="ftco-section ftco-no-pb ftco-no-pt bg-light">
+    <section class="ftco-section ftco-cart">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-7 py-5 wrap-about pb-md-5 ftco-animate">
-	          <div class="heading-section-bold mb-4 mt-md-5">
-	          	<div class="ml-md-0">
-		            <h2 class="mb-4">Welcome to CityGreens</h2>
-	            </div>
-	          </div>
-	          <div class="pb-md-5">
-	          
-						</div>
-					</div>
-				</div>
+    			<div class="col-md-12 ftco-animate">
+    				<div class="cart-list">
+	    				<table class="table">
+						    <thead class="thead-primary">
+						      <tr class="text-center">
+						        <th>&nbsp;</th>
+						        <th>&nbsp;</th>
+						        <th>Nome do Produto</th>
+						        <th>Preço</th>
+						        <th>Quantidade</th>
+						        <th>Total</th>
+						      </tr>
+						    </thead>
+						    <tbody>
+						      <tr class="text-center">
+						        <td class="product-remove"><a href="#"><span class="ion-ios-close"></span></a></td>
+						        
+						        <td class="image-prod"><div class="img" style="background-image:url(images/product-3.jpg);"></div></td>
+						        
+						        <td class="product-name">
+						        	<h3>Feijão Verde</h3>	
+						        </td>
+						        
+						        <td class="price">$4.90</td>
+						        
+						        <td class="quantity">
+						        	<div class="input-group mb-3">
+					             	<input type="text" name="quantity" class="quantity form-control input-number" value="1" min="1" max="100">
+					          	</div>
+					          </td>
+						        
+						        <td class="total">$4.90</td>
+						      </tr><!-- END TR-->
+
+						      <tr class="text-center">
+						        <td class="product-remove"><a href="#"><span class="ion-ios-close"></span></a></td>
+						        
+						        <td class="image-prod"><div class="img" style="background-image:url(images/product-4.jpg);"></div></td>
+						        
+						        <td class="product-name">
+						        	<h3>Repolho Roxo</h3>
+						        </td>
+						        
+						        <td class="price">$15.70</td>
+						        
+						        <td class="quantity">
+						        	<div class="input-group mb-3">
+					             	<input type="text" name="quantity" class="quantity form-control input-number" value="1" min="1" max="100">
+					          	</div>
+					          </td>
+						        
+						        <td class="total">$15.70</td>
+						      </tr><!-- END TR-->
+						    </tbody>
+						  </table>
+					  </div>
+    			</div>
+    		</div>
+    		<div class="row justify-content-end">
+    			<div class="col-lg-4 mt-5 cart-wrap ftco-animate">
+    				<div class="cart-total mb-3">
+    					<h3>Cupão</h3>
+    					<p>Insira o seu código de cupão, caso tenha um</p>
+  						<form action="#" class="info">
+	              <div class="form-group">
+	              	<label for="">Cupão</label>
+	                <input type="text" class="form-control text-left px-3" placeholder="">
+	              </div>
+	            </form>
+    				</div>
+    				<p><a href="checkout.html" class="btn btn-primary py-3 px-4">Apply Coupon</a></p>
+    			</div>
+    			<div class="col-lg-4 mt-5 cart-wrap ftco-animate">
+    				<div class="cart-total mb-3">
+						<h3>Estimativa de preço de entrega e impostos</h3>
+    					<p>Insira o destino para obter uma estimativa</p>
+  						<form action="#" class="info">
+	              <div class="form-group">
+	              	<label for="">País</label>
+	                <input type="text" class="form-control text-left px-3" placeholder="">
+	              </div>
+	              <div class="form-group">
+	              	<label for="country">Estado/Provincia</label>
+	                <input type="text" class="form-control text-left px-3" placeholder="">
+	              </div>
+	              <div class="form-group">
+	              	<label for="country">Código Postal</label>
+	                <input type="text" class="form-control text-left px-3" placeholder="">
+	              </div>
+	            </form>
+    				</div>
+    				<p><a href="checkout.html" class="btn btn-primary py-3 px-4">Estimativa</a></p>
+    			</div>
+    			<div class="col-lg-4 mt-5 cart-wrap ftco-animate">
+    				<div class="cart-total mb-3">
+    					<h3>Total do Carrinho</h3>
+    					<p class="d-flex">
+    						<span>Subtotal</span>
+    						<span>$20.60</span>
+    					</p>
+    					<p class="d-flex">
+    						<span>Entrega</span>
+    						<span>$0.00</span>
+    					</p>
+    					<p class="d-flex">
+    						<span>Disconto</span>
+    						<span>$3.00</span>
+    					</p>
+    					<hr>
+    					<p class="d-flex total-price">
+    						<span>Total</span>
+    						<span>$17.60</span>
+    					</p>
+    				</div>
+    				<p><a href="checkout.html" class="btn btn-primary py-3 px-4">Proceder para checkout</a></p>
+    			</div>
+    		</div>
 			</div>
 		</section>
-		
-		<section class="ftco-section testimony-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section ftco-animate text-center">
-          	<span class="subheading">Documentation</span>
-            <h2 class="mb-4">Versão 1.0(25/10/2019)</h2>
-            <embed src="pdf/Copy-of-AMS-E3-Visao-modelo.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="400px" />
-            <p></p>
-            <embed src="pdf/Copy-of-AMS-E4-Analise-de-requisitos-modelo.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="400px" />
-          </div>
-        </div>
-      </div>
-    </section>
 
     <footer class="ftco-footer ftco-section">
       <div class="container">
@@ -114,7 +206,7 @@
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">CityGreens</h2>
-              <p>Slogan</p>
+              <p>Insert Slogan</p>
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
                 <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
                 <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
@@ -137,7 +229,8 @@
               <h2 class="ftco-heading-2">Help</h2>
               <div class="d-flex">
 	              <ul class="list-unstyled mr-l-5 pr-l-3 mr-4">
-	                <li><a href="#" class="py-2 d-block">Shipping Information</a></li>  
+	                <li><a href="#" class="py-2 d-block">Shipping Information</a></li>
+	                <li><a href="#" class="py-2 d-block">Returns &amp; Exchange</a></li>
 	                <li><a href="#" class="py-2 d-block">Terms &amp; Conditions</a></li>
 	                <li><a href="#" class="py-2 d-block">Privacy Policy</a></li>
 	              </ul>
@@ -148,8 +241,6 @@
 	            </div>
             </div>
           </div>
-        </div>
-        <div class="row">
         </div>
       </div>
     </footer>
@@ -176,6 +267,43 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
+
+  <script>
+		$(document).ready(function(){
+
+		var quantitiy=0;
+		   $('.quantity-right-plus').click(function(e){
+		        
+		        // Stop acting like a button
+		        e.preventDefault();
+		        // Get the field name
+		        var quantity = parseInt($('#quantity').val());
+		        
+		        // If is not undefined
+		            
+		            $('#quantity').val(quantity + 1);
+
+		          
+		            // Increment
+		        
+		    });
+
+		     $('.quantity-left-minus').click(function(e){
+		        // Stop acting like a button
+		        e.preventDefault();
+		        // Get the field name
+		        var quantity = parseInt($('#quantity').val());
+		        
+		        // If is not undefined
+		      
+		            // Increment
+		            if(quantity>0){
+		            $('#quantity').val(quantity - 1);
+		            }
+		    });
+		    
+		});
+	</script>
     
   </body>
 </html>

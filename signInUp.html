@@ -97,17 +97,17 @@
           </div>
 
           <div class="col-md-6 d-flex">
-            <form action="#" class="bg-white p-5 contact-form">
+            <form action="./api/user/login.php" class="bg-white p-5 contact-form">
                 <h3>Sign in</h3>
                 <p>Faça aqui o login na sua conta.</p>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Seu e-mail">
+                <input id="username" name="username" type="text" class="input" placeholder="Seu e-mail">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Sua palavra-passe">
+                <input id="password" name="password" type="password" class="input" data-type="password" placeholder="Sua palavra-passe">
               </div>
               <div>
-                  <input type="checkbox" name="password" value="Bike">Lembrar palavra-passe<br>
+                  <input id="check" type="checkbox" class="check">Lembrar palavra-passe<br>
               </div>
               <div class="form-group">
                 <input type="submit" value="Fazer login" class="btn btn-primary py-3 px-5">
